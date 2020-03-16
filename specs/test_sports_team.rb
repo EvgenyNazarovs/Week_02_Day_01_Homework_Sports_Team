@@ -28,7 +28,8 @@ class TestSportsTeam < Minitest::Test
   end
 
   def test_set_coach
-    assert_equal("Tretyakov", @team1.set_coach("Tretyakov"))
+    @team1.coach = "Tretyakov"
+    assert_equal("Tretyakov", @team1.coach)
   end
 
 end
