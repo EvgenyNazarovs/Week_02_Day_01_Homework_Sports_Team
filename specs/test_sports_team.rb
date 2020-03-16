@@ -41,6 +41,11 @@ class TestSportsTeam < Minitest::Test
     assert_equal(true, @team1.check_player_name("V. Kozlov"))
   end
 
+  def test_add_point_if_win
+    @team1.add_point("win")
+    assert_equal(1, @team1.points)
+  end
+
 end
 
 
