@@ -37,6 +37,10 @@ class TestSportsTeam < Minitest::Test
                "N. Lidstrom", "S. Yzerman", "A. Miller", "A. Irbe"], @team1.add_player("A. Irbe"))
   end
 
+  def test_check_player_name
+    assert_equal(true, @team1.check_player_name("V. Kozlov"))
+  end
+
 end
 
 

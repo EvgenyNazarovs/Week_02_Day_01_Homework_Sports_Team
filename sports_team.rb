@@ -11,7 +11,11 @@ class Team
 
   def add_player(new_player)
     @players.push(new_player)
-  end 
+  end
+
+  def check_player_name(player)
+    return @players.include? player
+  end
 
   # def name
   #   return @name
