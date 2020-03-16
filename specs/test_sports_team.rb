@@ -8,15 +8,19 @@ Minitest::Reporters.use! Minitest::Reporters::SpecReporter.new
 class TestSportsTeam < Minitest::Test
 
   def setup
-    players = ["I. Larionov", "V. Kozlov", "M. Kuznetsov",
+    @players = ["I. Larionov", "V. Kozlov", "M. Kuznetsov",
                "N. Lidstrom", "S. Yzerman", "A. Miller"]
 
-    @team1 = Team.new("Detroit Red Wings", players, "Scotty Bowman")
+    @team1 = Team.new("Detroit Red Wings", @players, "Scotty Bowman")
 
-  end 
+  end
 
   def test_team_name
     assert_equal("Detroit Red Wings", @team1.name)
+  end
+
+  def test_players
+    assert_equal(@players, @team1.players)
   end
 
 end
