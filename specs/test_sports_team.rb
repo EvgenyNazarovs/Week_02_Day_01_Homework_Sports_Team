@@ -32,6 +32,11 @@ class TestSportsTeam < Minitest::Test
     assert_equal("Tretyakov", @team1.coach)
   end
 
+  def test_add_player
+    assert_equal(["I. Larionov", "V. Kozlov", "M. Kuznetsov",
+               "N. Lidstrom", "S. Yzerman", "A. Miller", "A. Irbe"], @team1.add_player("A. Irbe"))
+  end
+
 end
 
 

@@ -9,6 +9,10 @@ class Team
     @coach = coach
   end
 
+  def add_player(new_player)
+    @players.push(new_player)
+  end 
+
   # def name
   #   return @name
   # end
@@ -21,9 +25,9 @@ class Team
   #   return @coach
   # end
 
-  def set_coach(coach)
-    @coach = coach
-  end
+  # def set_coach(coach)
+  #   @coach = coach
+  # end
 
 
 
