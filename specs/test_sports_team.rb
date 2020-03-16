@@ -23,7 +23,12 @@ class TestSportsTeam < Minitest::Test
     assert_equal(@players, @team1.players)
   end
 
+  def test_coach
+    assert_equal("Scotty Bowman", @team1.coach)
+  end
+
 end
+
 
 =begin
 

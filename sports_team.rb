@@ -12,7 +12,11 @@ class Team
 
   def players
     return @players
-  end 
+  end
+
+  def coach
+    return @coach
+  end
 
 
 
